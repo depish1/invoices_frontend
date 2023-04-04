@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { StrictMode } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -15,9 +14,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+
+        <App />
       </ThemeProvider>
     </Provider>
   </StrictMode>,
