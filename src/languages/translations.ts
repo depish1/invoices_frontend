@@ -227,6 +227,10 @@ const translations = {
     en: 'Download the invoice',
     pl: 'Pobierz fakturę',
   },
+  saveChanges: {
+    en: 'Save changes',
+    pl: 'Zapisz zmiany',
+  },
 };
 
 export default translations;
