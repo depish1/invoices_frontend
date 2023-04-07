@@ -14,10 +14,9 @@ export const invoiceFormValidationSchema = object().shape({
     .of(
       object().shape({
         name: string().trim().required(i18next.t('fieldRequiredError')),
-        quantity: number().required(i18next.t('fieldRequiredError')),
-        net_price: number().required(i18next.t('fieldRequiredError')),
-        tax_rate: number().max(99, 'Max is 99').required(i18next.t('fieldRequiredError')),
-        gross_amount: number().required(i18next.t('fieldRequiredError')),
+        quantity: number().typeError(i18next.t('fieldRequiredError')).required(i18next.t('fieldRequiredError')),
+        net_price: number().typeError(i18next.t('fieldRequiredError')).required(i18next.t('fieldRequiredError')),
+        tax_rate: number().typeError(i18next.t('fieldRequiredError')).max(99, i18next.t('max99')).required(i18next.t('fieldRequiredError')),
       }),
     )
     .required(i18next.t('fieldRequiredError')),
