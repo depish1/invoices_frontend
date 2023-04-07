@@ -55,6 +55,7 @@ const ProductField = ({ productIndex, removeProduct, showDeleteButton }: IProduc
       />
       <NumericInputController
         decimalScale={2}
+        fixedDecimalScale
         id={`${fieldName}.gross_amount`}
         isLabelHidden
         isRequired

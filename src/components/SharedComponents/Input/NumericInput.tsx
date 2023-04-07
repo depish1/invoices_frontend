@@ -11,8 +11,9 @@ const NumericInput = ({ value, onChange, ...rest }: NumericFormatInputPropsType)
   const [localValue, setLocalValue] = useState(value);
 
   const changeHandler = (target: NumberFormatValues) => {
-    setLocalValue(target.formattedValue);
-    onChange(target.floatValue);
+    const newValue = target.floatValue || '';
+    setLocalValue(target.formattedValue || null);
+    onChange(newValue);
   };
 
   useEffect(() => {
