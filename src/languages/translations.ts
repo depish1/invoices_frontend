@@ -231,6 +231,10 @@ const translations = {
     en: 'Save changes',
     pl: 'Zapisz zmiany',
   },
+  max99: {
+    en: 'Max is 99',
+    pl: 'Maksimum to 99',
+  },
 };
 
 export default translations;
