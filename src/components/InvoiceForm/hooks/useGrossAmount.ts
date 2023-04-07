@@ -10,7 +10,7 @@ export const useGrossAmount = (productIndex: number) => {
 
   useEffect(() => {
     if (shouldResetField) return setValue(`products.${productIndex}.gross_amount`, '');
-    const newGrossAmount = (net_price * quantity + (net_price * quantity * tax_rate) / 100).toFixed(2);
+    const newGrossAmount = net_price * quantity + (net_price * quantity * tax_rate) / 100;
     setValue(`products.${productIndex}.gross_amount`, newGrossAmount);
     trigger(`products.${productIndex}.gross_amount`);
   }, [net_price, productIndex, quantity, setValue, shouldResetField, tax_rate, trigger]);
