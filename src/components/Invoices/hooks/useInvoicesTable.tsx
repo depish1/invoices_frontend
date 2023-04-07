@@ -4,6 +4,7 @@ import dayjs from 'dayjs';
 import { EViewType } from 'Enums/EViewType';
 import { IApiInvoice } from 'Types/ApiTypes';
 import { RowDataType } from 'Components/SharedComponents/Table/Table.type';
+import { formatPlCurrency } from 'Helpers/currencyFormatter';
 import { useNavigateParams } from 'Hooks/useNavigateParams';
 import InvoiceContextMenu from 'Components/Invoices/InvoiceContextMenu/InvoiceContextMenu';
 
@@ -27,7 +28,7 @@ export const useInvoicesTable = () => {
         { key: 'id', data: id },
         { key: 'buyer_name', data: buyer_name },
         { key: 'create_date', data: dayjs(create_date).format('YYYY-MM-DD') },
-        { key: 'gross_sum_amount', data: gross_sum_amount },
+        { key: 'gross_sum_amount', data: formatPlCurrency(gross_sum_amount) },
         {
           key: 'context',
           data: <InvoiceContextMenu id={id} />,
