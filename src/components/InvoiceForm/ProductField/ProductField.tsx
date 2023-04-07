@@ -54,6 +54,7 @@ const ProductField = ({ productIndex, removeProduct, showDeleteButton }: IProduc
         suffix=" %"
       />
       <NumericInputController
+        allowNegative={false}
         decimalScale={2}
         fixedDecimalScale
         id={`${fieldName}.gross_amount`}
