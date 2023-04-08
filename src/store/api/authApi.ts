@@ -3,6 +3,8 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { IGenericResponse, IUser } from 'Types/ApiTypes';
 import { LoginFormInputsType } from 'Components/Login/LoginForm/LoginForm.types';
 import { RegistrationFormInputsType } from 'Components/Registration/RegistrationForm/RegistrationForm.types';
+import { store } from '../store';
+import { invoicesApi } from './invoicesApi';
 
 type LoginResponseBodyType = { access_token: string; status: string; user: IUser };
 
@@ -26,6 +28,7 @@ export const authApi = createApi({
     }),
     loginUser: builder.mutation<LoginResponseBodyType, LoginFormInputsType>({
       query(data) {
+        store.dispatch(invoicesApi.util.invalidateTags(['Invoices']));
         return {
           url: 'login',
           method: 'POST',
