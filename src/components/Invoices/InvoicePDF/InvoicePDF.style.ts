@@ -1,11 +1,15 @@
 import { Font, StyleSheet } from '@react-pdf/renderer';
 
+import PoppinsRegular from 'Styles/fonts/Poppins-Regular.ttf';
+import PoppinsSemiBold from 'Styles/fonts/Poppins-SemiBold.ttf';
+import PoppinsBold from 'Styles/fonts/Poppins-Bold.ttf';
+
 Font.register({
   family: 'Poppins',
   fonts: [
-    { src: 'src/styles/fonts/Poppins-Regular.ttf', fontWeight: 400 },
-    { src: 'src/styles/fonts/Poppins-SemiBold.ttf', fontWeight: 600 },
-    { src: 'src/styles/fonts/Poppins-Bold.ttf', fontWeight: 700 },
+    { src: PoppinsRegular, fontWeight: 400 },
+    { src: PoppinsSemiBold, fontWeight: 600 },
+    { src: PoppinsBold, fontWeight: 700 },
   ],
 });
 
