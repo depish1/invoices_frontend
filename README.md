@@ -13,7 +13,7 @@
 👋 Welcome! **MyInvoice** is a web application for creating, storing, and generating invoices. It allows users to create accounts, login, create, delete and edit invoices, and generate PDF files with invoice data.  
 This is a side project that allowed me to develop my skills, try technologies that I had no contact with, and serves as a sample of my code to show during recruitment.
 
-Live: https://invoices-depish1.vercel.app
+Live: https://my-invoices-depish1.vercel.app
 
 I also prepared the backend of this application, but I warn you in advance that I am a fronted developer and it was my first contact with Node and express.js, so if you want to look at the code, treat it as a curiosity: https://github.com/depish1/invoices_backend
 
