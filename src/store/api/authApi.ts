@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { IGenericResponse, IUser } from 'Types/ApiTypes';
+import { IGenericResponse, IUser } from '@/types/Api';
 import { LoginFormInputsType } from 'Components/Login/LoginForm/LoginForm.types';
 import { RegistrationFormInputsType } from 'Components/Registration/RegistrationForm/RegistrationForm.types';
 import { store } from '../store';

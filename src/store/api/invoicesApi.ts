@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { IApiInvoice, IApiInvoiceWithProducts, IGenericResponse } from 'Types/ApiTypes';
+import { IApiInvoice, IApiInvoiceWithProducts, IGenericResponse } from '@/types/Api';
 import { InvoiceFormInputsType } from 'Components/InvoiceForm/InvoiceForm/InvoiceForm.types';
 
 import prepareAuthHeader from 'Api/prepareHeader';

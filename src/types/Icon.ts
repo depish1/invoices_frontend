@@ -1,4 +1,4 @@
-import { HexColorType, PixelSizeType, RemSizeType } from 'Types/ThemeTypes';
+import { HexColorType, PixelSizeType, RemSizeType } from '@/types/Theme';
 
 export type IconPropsType = {
   color: HexColorType;

@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import dayjs from 'dayjs';
 
 import { EViewType } from 'Enums/EViewType';
-import { IApiInvoice } from 'Types/ApiTypes';
+import { IApiInvoice } from '@/types/Api';
 import { RowDataType } from 'Components/SharedComponents/Table/Table.type';
 import { formatPlCurrency } from 'Helpers/currencyFormatter';
 import { useNavigateParams } from 'Hooks/useNavigateParams';

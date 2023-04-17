@@ -1,5 +1,5 @@
 import { ButtonWrapper, Header, Headline } from './ViewHeader.style';
-import { PixelSizeType, RemSizeType } from 'Types/ThemeTypes';
+import { PixelSizeType, RemSizeType } from '@/types/Theme';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
 
 interface IViewHeaderProps {

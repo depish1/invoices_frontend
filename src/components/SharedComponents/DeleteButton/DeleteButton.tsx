@@ -2,7 +2,7 @@ import { MouseEvent } from 'react';
 import { useTheme } from 'styled-components';
 
 import { ButtonWrapper } from './DeleteButton.style';
-import { PixelSizeType, RemSizeType } from 'Types/ThemeTypes';
+import { PixelSizeType, RemSizeType } from '@/types/Theme';
 import TrashIcon from 'Assets/TrashIcon';
 
 interface IDeleteButtonProps {

@@ -1,4 +1,4 @@
-import { IApiInvoiceWithProducts } from '@/types/ApiTypes';
+import { IApiInvoiceWithProducts } from '@/types/Api';
 import { Page, View, Document } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 

@@ -1,4 +1,4 @@
-import { IconPropsType } from 'Types/IconTypes';
+import { IconPropsType } from '@/types/Icon';
 import { theme } from 'Styles/themes';
 
 const LoaderIcon = ({ color = theme.colors.text1, height, width }: IconPropsType) => (

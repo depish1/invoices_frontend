@@ -1,5 +1,5 @@
 import { EViewType } from 'Enums/EViewType';
-import { IconPropsType } from 'Types/IconTypes';
+import { IconPropsType } from '@/types/Icon';
 
 export type NavConfigType = NavConfigElementType[];
 

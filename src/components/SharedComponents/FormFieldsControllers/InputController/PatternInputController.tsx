@@ -1,7 +1,7 @@
 import { PatternFormatProps } from 'react-number-format';
 import { useController, useFormContext } from 'react-hook-form';
 
-import { InputTextType } from 'Types/FormFieldsTypes';
+import { InputTextType } from '@/types/FormFields';
 import { Wrapper } from './InputController.style';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
 import HelperText from 'Components/SharedComponents/HelperText/HelperText';

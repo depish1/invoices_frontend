@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { PixelSizeType, RemSizeType } from 'Types/ThemeTypes';
+import { PixelSizeType, RemSizeType } from '@/types/Theme';
 
 interface IHeadlineProps {
   isSecondaryTextColor: boolean;

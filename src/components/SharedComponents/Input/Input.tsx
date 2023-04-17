@@ -1,6 +1,6 @@
 import { ChangeEvent, MouseEvent, Ref, forwardRef } from 'react';
 
-import { InputTextType } from 'Types/FormFieldsTypes';
+import { InputTextType } from '@/types/FormFields';
 import { StyledInput } from './Input.style';
 
 export interface IInputProps {

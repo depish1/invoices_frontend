@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { IUser } from 'Types/ApiTypes';
+import { IUser } from '@/types/Api';
 
 import { authApi } from 'Api/authApi';
 

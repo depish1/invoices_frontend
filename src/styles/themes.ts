@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 /* eslint-disable @typescript-eslint/naming-convention */
-import { ITheme } from 'Types/ThemeTypes';
+import { ITheme } from '@/types/Theme';
 
 export const theme: ITheme = {
   colors: {

@@ -1,4 +1,4 @@
-import { IconPropsType } from 'Types/IconTypes';
+import { IconPropsType } from '@/types/Icon';
 
 const ChevronDownIcon = ({ color, height, width }: IconPropsType) => (
   <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg">
