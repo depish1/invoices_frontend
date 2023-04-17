@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [
-      { find: 'Assets', replacement: path.resolve(__dirname, 'src/assets') },
+      { find: 'Icons', replacement: path.resolve(__dirname, 'src/icons') },
       { find: 'Components', replacement: path.resolve(__dirname, 'src/components') },
       { find: 'Enums', replacement: path.resolve(__dirname, 'src/enums') },
       { find: 'Layouts', replacement: path.resolve(__dirname, 'src/layouts') },
