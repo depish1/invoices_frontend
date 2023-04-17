@@ -2,8 +2,8 @@ import { useTheme } from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 import { ButtonContentWrapper, TextWrapper } from './LanguageContextMenu.style';
-import ChevronDownIcon from 'Assets/ChevronDownIcon';
-import ChevronUpIcon from 'Assets/ChevronUpIcon';
+import ChevronDownIcon from 'Icons/ChevronDownIcon';
+import ChevronUpIcon from 'Icons/ChevronUpIcon';
 
 interface IButtonContentProps {
   isMenuOpen: boolean;

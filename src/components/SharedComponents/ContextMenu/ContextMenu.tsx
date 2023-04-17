@@ -5,7 +5,7 @@ import { MouseEvent, ReactNode } from 'react';
 import { ButtonWrapper, ContextMenuWrapper, Option } from './ContextMenu.style';
 import { OptionConfigType } from './ContextMenu.type';
 import { useContextMenu } from './useContextMenu';
-import ContextMenuIcon from 'Assets/ContextMenuIcon';
+import ContextMenuIcon from 'Icons/ContextMenuIcon';
 
 interface IContextMenuProps {
   defaultOpen?: boolean;

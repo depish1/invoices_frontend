@@ -19,7 +19,7 @@
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
-      "Assets/*": ["./src/assets/*"],
+      "Assets/*": ["src/icons/*"],
       "Components/*": ["./src/components/*"],
       "Enums/*": ["./src/enums/*"],
       "Layouts/*": ["./src/layouts/*"],

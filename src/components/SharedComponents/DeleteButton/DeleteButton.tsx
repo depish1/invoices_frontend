@@ -3,7 +3,7 @@ import { useTheme } from 'styled-components';
 
 import { ButtonWrapper } from './DeleteButton.style';
 import { PixelSizeType, RemSizeType } from '@/types/Theme';
-import TrashIcon from 'Assets/TrashIcon';
+import TrashIcon from 'Icons/TrashIcon';
 
 interface IDeleteButtonProps {
   onClick: (event: MouseEvent<HTMLButtonElement>) => void;

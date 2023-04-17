@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useTheme } from 'styled-components';
 
 import { Background } from './Loader.style';
-import LoaderIcon from 'Assets/LoaderIcon';
+import LoaderIcon from 'Icons/LoaderIcon';
 
 const Loader = () => {
   const { colors } = useTheme();

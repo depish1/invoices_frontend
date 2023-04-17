@@ -1,7 +1,7 @@
 import { useTheme } from 'styled-components';
 
 import { LogoWrapper, TextPart } from './Logo.style';
-import ListIcon from 'Assets/ListIcon';
+import ListIcon from 'Icons/ListIcon';
 
 const Logo = () => {
   const { colors } = useTheme();
