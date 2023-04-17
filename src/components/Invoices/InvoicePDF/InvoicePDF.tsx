@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 
 import { calculateTaxAmount, calculateTotalGrossPrice, calculateTotalNetPrice } from 'Helpers/calculateProductsPrice';
 import { invoicePDFstyles } from 'Components/Invoices/InvoicePDF/InvoicePDF.style';
-import DataColumn from 'Components/Invoices/InvoicePDF/components/DataColumn';
-import InvoiceDate from 'Components/Invoices/InvoicePDF/components/InvoiceDate';
-import InvoiceHeader from 'Components/Invoices/InvoicePDF/components/InvoiceHeader';
-import ProductsTable from 'Components/Invoices/InvoicePDF/components/ProductsTable';
-import Summary from 'Components/Invoices/InvoicePDF/components/Summary';
+import DataColumn from 'Components/Invoices/InvoicePDF/InvoicesParts/DataColumn';
+import InvoiceDate from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceDate';
+import InvoiceHeader from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceHeader';
+import ProductsTable from 'Components/Invoices/InvoicePDF/InvoicesParts/ProductsTable';
+import Summary from 'Components/Invoices/InvoicePDF/InvoicesParts/Summary';
 
 interface IInvoicePDFProps {
   data: IApiInvoiceWithProducts;

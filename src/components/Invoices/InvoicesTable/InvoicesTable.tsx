@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { CellContentType } from 'Components/SharedComponents/Table/Table.type';
-import { useInvoicesTable } from 'Components/Invoices/hooks/useInvoicesTable';
+import { useInvoicesTable } from './useInvoicesTable';
 import Table from 'Components/SharedComponents/Table/Table';
 
 const InvoicesTable = () => {

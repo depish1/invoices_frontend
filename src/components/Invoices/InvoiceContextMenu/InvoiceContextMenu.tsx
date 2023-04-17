@@ -1,5 +1,5 @@
 import ContextMenu from 'Components/SharedComponents/ContextMenu/ContextMenu';
-import { useInvoiceContextMenu } from 'Components/Invoices/hooks/useInvoiceContextMenu';
+import { useInvoiceContextMenu } from 'Components/Invoices/InvoiceContextMenu/useInvoiceContextMenu';
 
 interface IInvoiceContextMenuProps {
   id: number;
