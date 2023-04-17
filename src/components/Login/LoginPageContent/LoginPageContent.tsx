@@ -4,11 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 import { Container } from './LoginPageContent.style';
 import { EViewType } from 'Enums/EViewType';
-import AccountIcon from 'Icons/AccountIcon';
+
 import Button from 'Components/SharedComponents/Button/Button';
 import LoginForm from 'Components/Login/LoginForm/LoginForm';
 import ViewHeader from 'Components/SharedComponents/ViewHeader/ViewHeader';
 import TextSeparator from 'Components/SharedComponents/TextSeparator/TextSeparator';
+import AccountIcon from 'Icons/AccountIcon';
 
 const LoginPageContent = () => {
   const { t } = useTranslation();
