@@ -16,8 +16,6 @@ export const useInvoiceContextMenu = (id: number) => {
   const [triggerGetInvoice] = useLazyGetInvoiceQuery();
   const navigateWithParams = useNavigateParams();
 
-  useLoader(isDeleting);
-
   const navigateToEditView = () => navigateWithParams(`/${EViewType.INVOICE_FORM}`, { id: `${id}` });
 
   const deleteInvoice = () => deleteInvoiceTrigger(id);
@@ -26,8 +24,7 @@ export const useInvoiceContextMenu = (id: number) => {
     try {
       const { data } = await triggerGetInvoice(id);
       const doc = <InvoicePDF data={data} />;
-      const asPdf = pdf(doc);
-      const blob = await asPdf.toBlob();
+      const blob = await pdf(doc).toBlob();
       saveAs(blob, `${t('invoiceNo')} ${id}.pdf`);
     } catch (e) {
       console.error(`Failed to generate invoice`, e);
@@ -48,6 +45,8 @@ export const useInvoiceContextMenu = (id: number) => {
       callback: generateInvoicePDF,
     },
   ];
+
+  useLoader(isDeleting);
 
   return options;
 };

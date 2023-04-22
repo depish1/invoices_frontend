@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 
 import { EViewType } from 'Enums/EViewType';
 import { Header404, Paragraph, Wrapper } from './NotFoundContent.style';
-import { useCountDown } from 'Components/NotFound/hooks/useCountDown';
+import { useCountDown } from 'Hooks/useCountDown';
 import { Semibold } from 'Components/SharedComponents/SharedStyles/SharedStyles';
 
 const NotFoundContent = () => {
