@@ -4,10 +4,10 @@ import { ButtonsWrapper, ProductsRowsWrapper, Section, SectionHeader } from './I
 import { useInvoiceFormParams } from 'Components/InvoiceForm/hooks/useInvoiceFormParams';
 import { useProducts } from 'Components/InvoiceForm/hooks/useProducts';
 import Button from 'Components/SharedComponents/Button/Button';
-import ProductField from 'Components/InvoiceForm/ProductField/ProductField';
-import ProductsSectionHeader from 'Components/InvoiceForm/ProductsSectionHeader/ProductsSectionHeader';
+import { ProductField } from 'Components/InvoiceForm/ProductField/ProductField';
+import { ProductsSectionHeader } from 'Components/InvoiceForm/ProductsSectionHeader/ProductsSectionHeader';
 
-const ProductsSection = () => {
+export const ProductsSection = () => {
   const { t } = useTranslation();
   const { fields, addProduct, remove } = useProducts();
   const id = useInvoiceFormParams();
@@ -28,5 +28,3 @@ const ProductsSection = () => {
     </Section>
   );
 };
-
-export default ProductsSection;

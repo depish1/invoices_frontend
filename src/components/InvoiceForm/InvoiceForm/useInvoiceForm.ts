@@ -10,7 +10,7 @@ import { invoiceFormValidationSchema } from 'Components/InvoiceForm/InvoiceForm/
 import { useInvoiceFormDefaultValues } from 'Components/InvoiceForm/hooks/useInvoiceFormDefaultValues';
 import { useLoader } from 'Hooks/useLoader';
 
-import { useSubmitInvoiceFormMutation } from './useSubmitInvoiceFormMutation';
+import { useSubmitInvoiceFormMutation } from 'Components/InvoiceForm/hooks/useSubmitInvoiceFormMutation';
 
 export const useInvoiceForm = () => {
   const { t } = useTranslation();
@@ -22,10 +22,6 @@ export const useInvoiceForm = () => {
     resolver: yupResolver(invoiceFormValidationSchema),
     defaultValues,
   });
-
-  const isLoading = isSubmitInvoiceLoading || isDefaultValuesLoading;
-
-  useLoader(isLoading);
 
   useEffect(() => {
     methods.reset({ ...defaultValues });
@@ -40,6 +36,9 @@ export const useInvoiceForm = () => {
     },
     [navigate, submitInvoiceFormMutation, t],
   );
+
+  const isLoading = isSubmitInvoiceLoading || isDefaultValuesLoading;
+  useLoader(isLoading);
 
   return { methods, onSubmit, formError, isLoading };
 };

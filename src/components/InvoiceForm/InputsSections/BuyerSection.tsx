@@ -4,7 +4,7 @@ import { Section, SectionHeader } from './InputsSections.style';
 import InputController from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
 import PatternInputController from 'Components/SharedComponents/FormFieldsControllers/InputController/PatternInputController';
 
-const BuyerSection = () => {
+export const BuyerSection = () => {
   const { t } = useTranslation();
 
   return (
@@ -17,5 +17,3 @@ const BuyerSection = () => {
     </Section>
   );
 };
-
-export default BuyerSection;

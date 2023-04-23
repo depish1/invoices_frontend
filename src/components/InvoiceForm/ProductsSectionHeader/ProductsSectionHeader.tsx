@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ProductsHeadline } from './ProductsSectionHeader.style';
 
-const ProductsSectionHeader = () => {
+export const ProductsSectionHeader = () => {
   const { t } = useTranslation();
 
   return (
@@ -16,5 +16,3 @@ const ProductsSectionHeader = () => {
     </>
   );
 };
-
-export default ProductsSectionHeader;

@@ -12,7 +12,7 @@ interface IProductFieldProps {
   showDeleteButton: boolean;
 }
 
-const ProductField = ({ productIndex, removeProduct, showDeleteButton }: IProductFieldProps) => {
+export const ProductField = ({ productIndex, removeProduct, showDeleteButton }: IProductFieldProps) => {
   const { t } = useTranslation();
   const fieldName = `products.${productIndex}`;
 
@@ -70,5 +70,3 @@ const ProductField = ({ productIndex, removeProduct, showDeleteButton }: IProduc
     </>
   );
 };
-
-export default ProductField;

@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { Container } from './InvoiceFormContent.style';
 import { EViewType } from 'Enums/EViewType';
 import { useInvoiceFormParams } from 'Components/InvoiceForm/hooks/useInvoiceFormParams';
-import InvoiceForm from 'Components/InvoiceForm/InvoiceForm/InvoiceForm';
+import { InvoiceForm } from 'Components/InvoiceForm/InvoiceForm/InvoiceForm';
 import ViewHeaderWithButton from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
 
-const InvoiceFormContent = () => {
+export const InvoiceFormContent = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const id = useInvoiceFormParams();
@@ -21,5 +21,3 @@ const InvoiceFormContent = () => {
     </Container>
   );
 };
-
-export default InvoiceFormContent;

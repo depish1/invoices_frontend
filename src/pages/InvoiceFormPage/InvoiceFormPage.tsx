@@ -1,11 +1,11 @@
 import { EViewType } from 'Enums/EViewType';
 import { useActiveViewSetter } from 'Hooks/useActiveViewSetter';
-import InvoiceContent from 'Components/InvoiceForm/InvoiceFormContent/InvoiceFormContent';
+import { InvoiceFormContent } from 'Components/InvoiceForm/InvoiceFormContent/InvoiceFormContent';
 
 const InvoiceFormPage = () => {
   useActiveViewSetter(EViewType.INVOICE_FORM);
 
-  return <InvoiceContent />;
+  return <InvoiceFormContent />;
 };
 
 export default InvoiceFormPage;
