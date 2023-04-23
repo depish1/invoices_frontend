@@ -3,7 +3,7 @@ import { useTheme } from 'styled-components';
 
 import { StyledButton } from './Button.style';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
-import LoaderIcon from 'Icons/LoaderIcon';
+import { LoaderIcon } from 'Icons/LoaderIcon';
 
 interface IButtonProps {
   isLoading?: boolean;

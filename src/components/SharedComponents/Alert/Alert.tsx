@@ -1,7 +1,7 @@
 import { useTheme } from 'styled-components';
 
 import { StyledAlert } from './Alert.style';
-import ErrorIcon from 'Icons/ErrorIcon';
+import { ErrorIcon } from 'Icons/ErrorIcon';
 
 interface IAlertProps {
   children: string;

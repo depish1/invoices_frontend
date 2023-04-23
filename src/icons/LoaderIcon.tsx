@@ -1,7 +1,7 @@
-import { IconPropsType } from '@/types/Icon';
+import { IconPropsType } from 'Types/Icon';
 import { theme } from 'Styles/themes';
 
-const LoaderIcon = ({ color = theme.colors.text1, height, width }: IconPropsType) => (
+export const LoaderIcon = ({ color = theme.colors.text1, height, width }: IconPropsType) => (
   <svg
     height={height}
     id="loader-1"
@@ -27,4 +27,3 @@ const LoaderIcon = ({ color = theme.colors.text1, height, width }: IconPropsType
     </path>
   </svg>
 );
-export default LoaderIcon;

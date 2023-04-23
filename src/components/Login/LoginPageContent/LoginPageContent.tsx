@@ -9,7 +9,7 @@ import { Button } from 'Components/SharedComponents/Button/Button';
 import LoginForm from 'Components/Login/LoginForm/LoginForm';
 import { ViewHeader } from 'Components/SharedComponents/ViewHeader/ViewHeader';
 import { TextSeparator } from 'Components/SharedComponents/TextSeparator/TextSeparator';
-import AccountIcon from 'Icons/AccountIcon';
+import { AccountIcon } from 'Icons/AccountIcon';
 
 const LoginPageContent = () => {
   const { t } = useTranslation();

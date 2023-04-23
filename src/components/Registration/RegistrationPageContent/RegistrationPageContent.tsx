@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Container } from './RegistrationPageContent.style';
 import { EViewType } from 'Enums/EViewType';
-import AccountPlusIcon from 'Icons/AccountPlusIcon';
+import { AccountPlusIcon } from 'Icons/AccountPlusIcon';
 import { Button } from 'Components/SharedComponents/Button/Button';
 import RegistrationForm from 'Components/Registration/RegistrationForm/RegistrationForm';
 import { ViewHeader } from 'Components/SharedComponents/ViewHeader/ViewHeader';

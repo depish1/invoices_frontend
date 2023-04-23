@@ -1,4 +1,4 @@
-import { IconPropsType } from '@/types/Icon';
+import { IconPropsType } from 'Types/Icon';
 
 export const ListIcon = ({ color, height, width }: IconPropsType) => (
   <svg height={height} viewBox="0 0 24 24" width={width}>
