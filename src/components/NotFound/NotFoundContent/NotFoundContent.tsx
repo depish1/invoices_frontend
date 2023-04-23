@@ -7,7 +7,7 @@ import { Header404, Paragraph, Wrapper } from './NotFoundContent.style';
 import { useCountDown } from 'Hooks/useCountDown';
 import { Semibold } from 'Components/SharedComponents/SharedStyles/SharedStyles';
 
-const NotFoundContent = () => {
+export const NotFoundContent = () => {
   const [counter, countDown] = useCountDown();
   const navigate = useNavigate();
 
@@ -26,5 +26,3 @@ const NotFoundContent = () => {
     </Wrapper>
   );
 };
-
-export default NotFoundContent;

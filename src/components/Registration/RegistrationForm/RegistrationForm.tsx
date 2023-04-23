@@ -7,7 +7,7 @@ import { Alert } from 'Components/SharedComponents/Alert/Alert';
 import { Button } from 'Components/SharedComponents/Button/Button';
 import { InputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
 
-const AccountDataStep = () => {
+export const RegistrationForm = () => {
   const { t } = useTranslation();
   const { methods, onSubmit, formError } = useRegistrationForm();
 
@@ -23,5 +23,3 @@ const AccountDataStep = () => {
     </FormProvider>
   );
 };
-
-export default AccountDataStep;

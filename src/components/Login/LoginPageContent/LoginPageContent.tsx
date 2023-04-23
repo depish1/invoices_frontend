@@ -6,12 +6,12 @@ import { Container } from './LoginPageContent.style';
 import { EViewType } from 'Enums/EViewType';
 
 import { Button } from 'Components/SharedComponents/Button/Button';
-import LoginForm from 'Components/Login/LoginForm/LoginForm';
+import { LoginForm } from 'Components/Login/LoginForm/LoginForm';
 import { ViewHeader } from 'Components/SharedComponents/ViewHeader/ViewHeader';
 import { TextSeparator } from 'Components/SharedComponents/TextSeparator/TextSeparator';
 import { AccountIcon } from 'Icons/AccountIcon';
 
-const LoginPageContent = () => {
+export const LoginPageContent = () => {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const navigate = useNavigate();
@@ -27,5 +27,3 @@ const LoginPageContent = () => {
     </Container>
   );
 };
-
-export default LoginPageContent;

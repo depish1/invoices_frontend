@@ -7,7 +7,7 @@ import { Alert } from 'Components/SharedComponents/Alert/Alert';
 import { Button } from 'Components/SharedComponents/Button/Button';
 import { InputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
 
-const LoginPageContent = () => {
+export const LoginForm = () => {
   const { t } = useTranslation();
   const { methods, onSubmit, formError } = useLoginForm();
 
@@ -22,5 +22,3 @@ const LoginPageContent = () => {
     </FormProvider>
   );
 };
-
-export default LoginPageContent;
