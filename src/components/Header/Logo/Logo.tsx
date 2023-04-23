@@ -1,9 +1,9 @@
 import { useTheme } from 'styled-components';
 
 import { LogoWrapper, TextPart } from './Logo.style';
-import ListIcon from 'Icons/ListIcon';
+import { ListIcon } from 'Icons/ListIcon';
 
-const Logo = () => {
+export const Logo = () => {
   const { colors } = useTheme();
 
   return (
@@ -15,5 +15,3 @@ const Logo = () => {
     </LogoWrapper>
   );
 };
-
-export default Logo;

@@ -9,7 +9,7 @@ interface IButtonContentProps {
   isMenuOpen: boolean;
 }
 
-const ButtonContent = ({ isMenuOpen }: IButtonContentProps) => {
+export const ButtonContent = ({ isMenuOpen }: IButtonContentProps) => {
   const { t } = useTranslation();
   const { colors } = useTheme();
 
@@ -24,5 +24,3 @@ const ButtonContent = ({ isMenuOpen }: IButtonContentProps) => {
     </ButtonContentWrapper>
   );
 };
-
-export default ButtonContent;

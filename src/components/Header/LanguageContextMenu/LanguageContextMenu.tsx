@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-import ButtonContent from './ButtonContent';
+import { ButtonContent } from './ButtonContent';
 import ContextMenu from 'Components/SharedComponents/ContextMenu/ContextMenu';
 
 type LanguageType = 'pl' | 'en';
 
-const LanguageContextMenu = () => {
+export const LanguageContextMenu = () => {
   const { i18n, t } = useTranslation();
 
   const changeLanguage = (lang: LanguageType) => i18n.changeLanguage(lang);
@@ -23,5 +23,3 @@ const LanguageContextMenu = () => {
 
   return <ContextMenu options={options} renderReferenceContent={(isMenuOpen) => <ButtonContent isMenuOpen={isMenuOpen} />} />;
 };
-
-export default LanguageContextMenu;

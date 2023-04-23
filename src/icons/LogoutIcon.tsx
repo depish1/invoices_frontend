@@ -1,6 +1,6 @@
-import { IconPropsType } from '@/types/Icon';
+import { IconPropsType } from 'Types/Icon';
 
-const LogoutIcon = ({ color, height, width }: IconPropsType) => (
+export const LogoutIcon = ({ color, height, width }: IconPropsType) => (
   <svg fill="none" height={height} viewBox="0 0 24 24" width={width}>
     <path d="M21 12L13 12" stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
     <path
@@ -19,5 +19,3 @@ const LogoutIcon = ({ color, height, width }: IconPropsType) => (
     />
   </svg>
 );
-
-export default LogoutIcon;

@@ -3,11 +3,11 @@ import { useTheme } from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 import { Button, ButtonText } from './LogoutButton.style';
-import LogoutIcon from 'Icons/LogoutIcon';
+import { LogoutIcon } from 'Icons/LogoutIcon';
 
 import { logout } from 'Slices/userSlice';
 
-const LogoutButton = () => {
+export const LogoutButton = () => {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const dispatch = useDispatch();
@@ -21,5 +21,3 @@ const LogoutButton = () => {
     </Button>
   );
 };
-
-export default LogoutButton;
