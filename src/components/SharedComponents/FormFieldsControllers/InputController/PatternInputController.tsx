@@ -4,9 +4,9 @@ import { useController, useFormContext } from 'react-hook-form';
 import { InputTextType } from '@/types/FormFields';
 import { Wrapper } from './InputController.style';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
-import HelperText from 'Components/SharedComponents/HelperText/HelperText';
-import Label from 'Components/SharedComponents/Label/Label';
-import PatternInput from 'Components/SharedComponents/Input/PatternInput';
+import { HelperText } from 'Components/SharedComponents/HelperText/HelperText';
+import { Label } from 'Components/SharedComponents/Label/Label';
+import { PatternInput } from 'Components/SharedComponents/Input/PatternInput';
 
 type PatternInputControllerPropsType = {
   defaultValue?: string;
@@ -23,7 +23,7 @@ type PatternInputControllerPropsType = {
   isLabelHidden?: boolean;
 } & PatternFormatProps;
 
-const PatternInputController = ({
+export const PatternInputController = ({
   id,
   name,
   isRequired,
@@ -56,5 +56,3 @@ const PatternInputController = ({
     </Wrapper>
   );
 };
-
-export default PatternInputController;

@@ -17,8 +17,6 @@ export interface IInputProps {
   value?: string;
 }
 
-const Input = forwardRef((props: IInputProps, ref: Ref<HTMLInputElement>) => {
+export const Input = forwardRef((props: IInputProps, ref: Ref<HTMLInputElement>) => {
   return <StyledInput ref={ref} {...props}></StyledInput>;
 });
-
-export default Input;

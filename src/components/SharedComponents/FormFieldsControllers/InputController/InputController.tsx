@@ -3,9 +3,9 @@ import { useController, useFormContext } from 'react-hook-form';
 import { InputTextType } from '@/types/FormFields';
 import { Wrapper } from './InputController.style';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
-import HelperText from 'Components/SharedComponents/HelperText/HelperText';
-import Input from 'Components/SharedComponents/Input/Input';
-import Label from 'Components/SharedComponents/Label/Label';
+import { HelperText } from 'Components/SharedComponents/HelperText/HelperText';
+import { Input } from 'Components/SharedComponents/Input/Input';
+import { Label } from 'Components/SharedComponents/Label/Label';
 
 type InputControllerPropsType = {
   defaultValue?: string;
@@ -22,7 +22,7 @@ type InputControllerPropsType = {
   isLabelHidden?: boolean;
 };
 
-const InputController = ({ id, name, isRequired, label, helperText, isLabelHidden, placeholder, ...props }: InputControllerPropsType) => {
+export const InputController = ({ id, name, isRequired, label, helperText, isLabelHidden, placeholder, ...props }: InputControllerPropsType) => {
   const { control } = useFormContext();
   const {
     field,
@@ -37,5 +37,3 @@ const InputController = ({ id, name, isRequired, label, helperText, isLabelHidde
     </Wrapper>
   );
 };
-
-export default InputController;

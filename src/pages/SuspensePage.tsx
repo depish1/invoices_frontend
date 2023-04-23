@@ -1,6 +1,6 @@
 import { ReactNode, Suspense } from 'react';
 
-import Loader from 'Components/SharedComponents/Loader/Loader';
+import { Loader } from 'Components/SharedComponents/Loader/Loader';
 
 interface ISuspensePageProps {
   page: ReactNode;

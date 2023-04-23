@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { CellContentType } from 'Components/SharedComponents/Table/Table.type';
 import { useInvoicesTable } from './useInvoicesTable';
-import Table from 'Components/SharedComponents/Table/Table';
+import { Table } from 'Components/SharedComponents/Table/Table';
 
 const InvoicesTable = () => {
   const { t } = useTranslation();

@@ -5,10 +5,8 @@ interface ITextSeparatorProps {
   text: string;
 }
 
-const TextSeparator = ({ text }: ITextSeparatorProps) => (
+export const TextSeparator = ({ text }: ITextSeparatorProps) => (
   <Wrapper>
     <StyledTextSeparator>{capitalizeFirstLetter(text)}</StyledTextSeparator>
   </Wrapper>
 );
-
-export default TextSeparator;

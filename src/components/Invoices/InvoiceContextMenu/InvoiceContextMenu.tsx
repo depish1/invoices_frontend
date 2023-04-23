@@ -1,4 +1,4 @@
-import ContextMenu from 'Components/SharedComponents/ContextMenu/ContextMenu';
+import { ContextMenu } from 'Components/SharedComponents/ContextMenu/ContextMenu';
 import { useInvoiceContextMenu } from 'Components/Invoices/InvoiceContextMenu/useInvoiceContextMenu';
 
 interface IInvoiceContextMenuProps {

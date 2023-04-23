@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 
 import { Form } from 'Components/Registration/RegistrationForm/RegistrationForm.style';
 import { useRegistrationForm } from 'Components/Registration/RegistrationForm/useRegistrationForm';
-import Alert from 'Components/SharedComponents/Alert/Alert';
-import Button from 'Components/SharedComponents/Button/Button';
-import InputController from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
+import { Alert } from 'Components/SharedComponents/Alert/Alert';
+import { Button } from 'Components/SharedComponents/Button/Button';
+import { InputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
 
 const AccountDataStep = () => {
   const { t } = useTranslation();

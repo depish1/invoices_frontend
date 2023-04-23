@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { Container } from './LoginPageContent.style';
 import { EViewType } from 'Enums/EViewType';
 
-import Button from 'Components/SharedComponents/Button/Button';
+import { Button } from 'Components/SharedComponents/Button/Button';
 import LoginForm from 'Components/Login/LoginForm/LoginForm';
-import ViewHeader from 'Components/SharedComponents/ViewHeader/ViewHeader';
-import TextSeparator from 'Components/SharedComponents/TextSeparator/TextSeparator';
+import { ViewHeader } from 'Components/SharedComponents/ViewHeader/ViewHeader';
+import { TextSeparator } from 'Components/SharedComponents/TextSeparator/TextSeparator';
 import AccountIcon from 'Icons/AccountIcon';
 
 const LoginPageContent = () => {

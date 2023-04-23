@@ -8,11 +8,9 @@ export interface ILabelProps {
   id: string;
 }
 
-const Label = ({ isHidden = false, isRequired, label, id }: ILabelProps) => (
+export const Label = ({ isHidden = false, isRequired, label, id }: ILabelProps) => (
   <StyledLabel htmlFor={id} isHidden={isHidden}>
     <LabelText>{capitalizeFirstLetter(label)}</LabelText>
     {isRequired && <Required>*</Required>}
   </StyledLabel>
 );
-
-export default Label;

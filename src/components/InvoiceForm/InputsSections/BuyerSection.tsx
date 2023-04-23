@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
 import { Section, SectionHeader } from './InputsSections.style';
-import InputController from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
-import PatternInputController from 'Components/SharedComponents/FormFieldsControllers/InputController/PatternInputController';
+import { InputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
+import { PatternInputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/PatternInputController';
 
 export const BuyerSection = () => {
   const { t } = useTranslation();

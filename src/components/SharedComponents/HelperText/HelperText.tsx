@@ -5,6 +5,4 @@ export interface IHelperTextProps {
   helperText?: string;
 }
 
-const HelperText = ({ isError = false, helperText }: IHelperTextProps) => <StyledHelperText isError={isError}>{helperText}</StyledHelperText>;
-
-export default HelperText;
+export const HelperText = ({ isError = false, helperText }: IHelperTextProps) => <StyledHelperText isError={isError}>{helperText}</StyledHelperText>;

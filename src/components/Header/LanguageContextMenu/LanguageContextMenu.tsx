@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 import { ButtonContent } from './ButtonContent';
-import ContextMenu from 'Components/SharedComponents/ContextMenu/ContextMenu';
+import { ContextMenu } from 'Components/SharedComponents/ContextMenu/ContextMenu';
 
 type LanguageType = 'pl' | 'en';
 

@@ -10,12 +10,10 @@ interface IViewHeaderProps {
   text: string;
 }
 
-const ViewHeader = ({ button, icon, isSecondaryTextColor = false, marginBottom, text }: IViewHeaderProps) => (
+export const ViewHeader = ({ button, icon, isSecondaryTextColor = false, marginBottom, text }: IViewHeaderProps) => (
   <Header isButton={!!button} marginBottom={marginBottom}>
     {icon && icon}
     <Headline isSecondaryTextColor={isSecondaryTextColor}>{capitalizeFirstLetter(text)}</Headline>
     {button && <ButtonWrapper>{button}</ButtonWrapper>}
   </Header>
 );
-
-export default ViewHeader;

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Container, Wrapper } from './InvoiceContent.style';
 import { EViewType } from 'Enums/EViewType';
 import InvoicesTable from 'Components/Invoices/InvoicesTable/InvoicesTable';
-import ViewHeaderWithButton from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
+import { ViewHeaderWithButton } from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
 
 const InvoicesContent = () => {
   const { t } = useTranslation();

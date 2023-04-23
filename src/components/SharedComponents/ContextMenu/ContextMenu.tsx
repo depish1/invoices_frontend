@@ -13,7 +13,7 @@ interface IContextMenuProps {
   renderReferenceContent?: (isMenuOpen: boolean) => ReactNode;
 }
 
-const ContextMenu = ({ defaultOpen = false, options, renderReferenceContent }: IContextMenuProps) => {
+export const ContextMenu = ({ defaultOpen = false, options, renderReferenceContent }: IContextMenuProps) => {
   const { colors } = useTheme();
   const {
     isContextMenuOpen,
@@ -74,5 +74,3 @@ const ContextMenu = ({ defaultOpen = false, options, renderReferenceContent }: I
     </>
   );
 };
-
-export default ContextMenu;

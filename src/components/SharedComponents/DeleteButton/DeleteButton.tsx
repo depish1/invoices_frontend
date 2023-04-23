@@ -10,7 +10,7 @@ interface IDeleteButtonProps {
   size?: PixelSizeType | RemSizeType;
 }
 
-const DeleteButton = ({ onClick, size = '3rem' }: IDeleteButtonProps) => {
+export const DeleteButton = ({ onClick, size = '3rem' }: IDeleteButtonProps) => {
   const { colors } = useTheme();
   return (
     <ButtonWrapper onClick={onClick}>
@@ -18,5 +18,3 @@ const DeleteButton = ({ onClick, size = '3rem' }: IDeleteButtonProps) => {
     </ButtonWrapper>
   );
 };
-
-export default DeleteButton;

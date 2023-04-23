@@ -1,6 +1,6 @@
 import { Cell, HeaderRow, Row, TableWrapper, TBody } from './Table.style';
 import { CellContentType, RowDataType } from './Table.type';
-import Loader from 'Components/SharedComponents/Loader/Loader';
+import { Loader } from 'Components/SharedComponents/Loader/Loader';
 
 interface ITableProps {
   data?: RowDataType[];
@@ -9,7 +9,7 @@ interface ITableProps {
   isLoading?: boolean;
 }
 
-const Table = ({ data, headers, gridTemplateColumns, isLoading }: ITableProps) => {
+export const Table = ({ data, headers, gridTemplateColumns, isLoading }: ITableProps) => {
   const loader = isLoading ? <Loader /> : null;
 
   return (
@@ -33,5 +33,3 @@ const Table = ({ data, headers, gridTemplateColumns, isLoading }: ITableProps) =
     </TableWrapper>
   );
 };
-
-export default Table;

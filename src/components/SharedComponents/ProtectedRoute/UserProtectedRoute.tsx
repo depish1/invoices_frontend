@@ -10,7 +10,7 @@ interface IUserProtectedRouteProps {
   children?: ReactElement;
 }
 
-const UserProtectedRoute = ({ children }: IUserProtectedRouteProps) => {
+export const UserProtectedRoute = ({ children }: IUserProtectedRouteProps) => {
   const user = useSelector(userSelector);
   if (!user) {
     return <Navigate replace to={`/${EViewType.LOGIN}`} />;
@@ -18,5 +18,3 @@ const UserProtectedRoute = ({ children }: IUserProtectedRouteProps) => {
 
   return children ? children : <Outlet />;
 };
-
-export default UserProtectedRoute;

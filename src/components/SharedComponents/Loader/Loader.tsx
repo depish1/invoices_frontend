@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components';
 import { Background } from './Loader.style';
 import LoaderIcon from 'Icons/LoaderIcon';
 
-const Loader = () => {
+export const Loader = () => {
   const { colors } = useTheme();
   const loaderColor = colors.text1;
 
@@ -22,5 +22,3 @@ const Loader = () => {
     </Background>
   );
 };
-
-export default Loader;

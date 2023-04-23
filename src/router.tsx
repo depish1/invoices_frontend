@@ -5,7 +5,7 @@ import { EViewType } from 'Enums/EViewType';
 import DefaultLayout from 'Layouts/DefaultLayout/DefaultLayout';
 import NotFoundPage from 'Pages/NotFoundPage/NotFoundPage';
 import SuspensePage from 'Pages/SuspensePage';
-import UserProtectedRoute from 'Components/SharedComponents/ProtectedRoute/UserProtectedRoute';
+import { UserProtectedRoute } from 'Components/SharedComponents/ProtectedRoute/UserProtectedRoute';
 
 const LoginPage = lazy(() => import('Pages/LoginPage/LoginPage'));
 const RegistrationPage = lazy(() => import('Pages/RegistrationPage/RegistrationPage'));

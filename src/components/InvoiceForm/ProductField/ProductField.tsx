@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 
 import { checkIfValueIsLessThan100 } from 'Helpers/checkIfValueIsLessThan100';
 import { useGrossAmount } from 'Components/InvoiceForm/hooks/useGrossAmount';
-import DeleteButton from 'Components/SharedComponents/DeleteButton/DeleteButton';
-import InputController from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
-import NumericInputController from 'Components/SharedComponents/FormFieldsControllers/InputController/NumericInputController';
+import { DeleteButton } from 'Components/SharedComponents/DeleteButton/DeleteButton';
+import { InputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/InputController';
+import { NumericInputController } from 'Components/SharedComponents/FormFieldsControllers/InputController/NumericInputController';
 
 interface IProductFieldProps {
   productIndex: number;

@@ -4,9 +4,9 @@ import { useController, useFormContext } from 'react-hook-form';
 import { InputTextType } from '@/types/FormFields';
 import { Wrapper } from './InputController.style';
 import { capitalizeFirstLetter } from 'Helpers/capitalizeFirstLetter';
-import HelperText from 'Components/SharedComponents/HelperText/HelperText';
-import Label from 'Components/SharedComponents/Label/Label';
-import NumericFormatInput from 'Components/SharedComponents/Input/NumericInput';
+import { HelperText } from 'Components/SharedComponents/HelperText/HelperText';
+import { Label } from 'Components/SharedComponents/Label/Label';
+import { NumericInput } from 'Components/SharedComponents/Input/NumericInput';
 
 type NumericInputControllerPropsType = {
   defaultValue?: string;
@@ -23,7 +23,7 @@ type NumericInputControllerPropsType = {
   isLabelHidden?: boolean;
 } & NumericFormatProps;
 
-const NumericInputController = ({
+export const NumericInputController = ({
   id,
   name,
   isRequired,
@@ -42,7 +42,7 @@ const NumericInputController = ({
   return (
     <Wrapper>
       {label && <Label id={id} isHidden={isLabelHidden} isRequired={isRequired} label={capitalizeFirstLetter(label)} />}
-      <NumericFormatInput
+      <NumericInput
         id={id}
         isError={!!error}
         name={name}
@@ -56,5 +56,3 @@ const NumericInputController = ({
     </Wrapper>
   );
 };
-
-export default NumericInputController;

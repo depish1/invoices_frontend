@@ -15,7 +15,7 @@ interface IButtonProps {
   type?: 'button' | 'submit';
 }
 
-const Button = ({ isLoading, fullWidth = true, isSecondary = false, onClick, text, type = 'button', size = 'medium' }: IButtonProps) => {
+export const Button = ({ isLoading, fullWidth = true, isSecondary = false, onClick, text, type = 'button', size = 'medium' }: IButtonProps) => {
   const theme = useTheme();
   const loaderColor = theme.colors[isSecondary ? 'primary4' : 'text1'];
   const loaderSize = size === 'small' ? '1.2rem' : '2rem';
@@ -26,5 +26,3 @@ const Button = ({ isLoading, fullWidth = true, isSecondary = false, onClick, tex
     </StyledButton>
   );
 };
-
-export default Button;

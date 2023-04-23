@@ -7,7 +7,7 @@ import { StyledInput } from './Input.style';
 
 type NumericFormatInputPropsType = IInputProps & NumericFormatProps & Pick<ControllerRenderProps, 'onChange'>;
 
-const NumericInput = ({ value, onChange, ...rest }: NumericFormatInputPropsType) => {
+export const NumericInput = ({ value, onChange, ...rest }: NumericFormatInputPropsType) => {
   const [localValue, setLocalValue] = useState(value);
 
   const changeHandler = (target: NumberFormatValues) => {
@@ -22,5 +22,3 @@ const NumericInput = ({ value, onChange, ...rest }: NumericFormatInputPropsType)
 
   return <NumericFormat customInput={StyledInput} onValueChange={changeHandler} value={localValue} {...rest} />;
 };
-
-export default NumericInput;

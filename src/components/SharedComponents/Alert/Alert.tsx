@@ -7,7 +7,7 @@ interface IAlertProps {
   children: string;
 }
 
-const Alert = ({ children }: IAlertProps) => {
+export const Alert = ({ children }: IAlertProps) => {
   const { colors } = useTheme();
 
   return (
@@ -17,5 +17,3 @@ const Alert = ({ children }: IAlertProps) => {
     </StyledAlert>
   );
 };
-
-export default Alert;

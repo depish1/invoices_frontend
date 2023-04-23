@@ -5,7 +5,7 @@ import { Container } from './InvoiceFormContent.style';
 import { EViewType } from 'Enums/EViewType';
 import { useInvoiceFormParams } from 'Components/InvoiceForm/hooks/useInvoiceFormParams';
 import { InvoiceForm } from 'Components/InvoiceForm/InvoiceForm/InvoiceForm';
-import ViewHeaderWithButton from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
+import { ViewHeaderWithButton } from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
 
 export const InvoiceFormContent = () => {
   const { t } = useTranslation();
