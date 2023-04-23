@@ -6,7 +6,7 @@ import { EViewType } from 'Enums/EViewType';
 import { OptionConfigType } from 'Components/SharedComponents/ContextMenu/ContextMenu.type';
 import { useLoader } from 'Hooks/useLoader';
 import { useNavigateParams } from 'Hooks/useNavigateParams';
-import InvoicePDF from 'Components/Invoices/InvoicePDF/InvoicePDF';
+import { InvoicePDF } from 'Components/Invoices/InvoicePDF/InvoicePDF';
 
 import { useDeleteInvoiceMutation, useLazyGetInvoiceQuery } from 'Api/invoicesApi';
 

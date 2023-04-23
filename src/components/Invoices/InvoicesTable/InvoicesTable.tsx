@@ -5,7 +5,7 @@ import { CellContentType } from 'Components/SharedComponents/Table/Table.type';
 import { useInvoicesTable } from './useInvoicesTable';
 import { Table } from 'Components/SharedComponents/Table/Table';
 
-const InvoicesTable = () => {
+export const InvoicesTable = () => {
   const { t } = useTranslation();
   const { invoicesDataToShow, isLoading } = useInvoicesTable();
   const gridTemplateColumns = '9rem minmax(20rem,1fr ) 10rem 10rem 4.2rem';
@@ -38,5 +38,3 @@ const InvoicesTable = () => {
 
   return <Table data={invoicesDataToShow} gridTemplateColumns={gridTemplateColumns} headers={headers} isLoading={isLoading} />;
 };
-
-export default InvoicesTable;

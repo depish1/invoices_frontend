@@ -10,7 +10,7 @@ interface IDataColumnProps {
   headline?: string;
 }
 
-const DataColumn = ({ name, address, address2, nip, headline }: IDataColumnProps) => (
+export const DataColumn = ({ name, address, address2, nip, headline }: IDataColumnProps) => (
   <View style={invoicePDFstyles.column}>
     {!!headline && <Text style={invoicePDFstyles.sectionHeadline}>{headline}</Text>}
     <Text style={invoicePDFstyles.defaultText}>{name}</Text>
@@ -19,5 +19,3 @@ const DataColumn = ({ name, address, address2, nip, headline }: IDataColumnProps
     <Text style={invoicePDFstyles.defaultText}>{nip}</Text>
   </View>
 );
-
-export default DataColumn;

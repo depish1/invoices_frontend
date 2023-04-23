@@ -6,7 +6,7 @@ import { EViewType } from 'Enums/EViewType';
 import InvoicesTable from 'Components/Invoices/InvoicesTable/InvoicesTable';
 import { ViewHeaderWithButton } from 'Components/SharedComponents/ViewHeader/ViewHeaderWithButton';
 
-const InvoicesContent = () => {
+export const InvoicesContent = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -21,5 +21,3 @@ const InvoicesContent = () => {
     </Container>
   );
 };
-
-export default InvoicesContent;

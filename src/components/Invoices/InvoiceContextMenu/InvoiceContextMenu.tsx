@@ -5,10 +5,8 @@ interface IInvoiceContextMenuProps {
   id: number;
 }
 
-const InvoiceContextMenu = ({ id }: IInvoiceContextMenuProps) => {
+export const InvoiceContextMenu = ({ id }: IInvoiceContextMenuProps) => {
   const options = useInvoiceContextMenu(id);
 
   return <ContextMenu options={options} />;
 };
-
-export default InvoiceContextMenu;

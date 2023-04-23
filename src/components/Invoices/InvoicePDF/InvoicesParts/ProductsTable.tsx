@@ -12,7 +12,7 @@ interface IProductsTableProps {
 
 const getCellStyles = (width: string) => ({ ...invoicePDFstyles.tableCell, width });
 
-const ProductsTable = ({ products }: IProductsTableProps) => {
+export const ProductsTable = ({ products }: IProductsTableProps) => {
   const { t } = useTranslation();
 
   return (
@@ -36,5 +36,3 @@ const ProductsTable = ({ products }: IProductsTableProps) => {
     </View>
   );
 };
-
-export default ProductsTable;

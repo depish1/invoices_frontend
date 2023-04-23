@@ -8,7 +8,7 @@ interface IInvoiceDateProps {
   date: string;
 }
 
-const InvoiceDate = ({ date }: IInvoiceDateProps) => {
+export const InvoiceDate = ({ date }: IInvoiceDateProps) => {
   const { t } = useTranslation();
 
   return (
@@ -17,5 +17,3 @@ const InvoiceDate = ({ date }: IInvoiceDateProps) => {
     </View>
   );
 };
-
-export default InvoiceDate;

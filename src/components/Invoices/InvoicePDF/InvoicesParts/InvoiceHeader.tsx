@@ -7,7 +7,7 @@ interface IInvoiceHeaderProps {
   id: number;
 }
 
-const InvoiceHeader = ({ id }: IInvoiceHeaderProps) => {
+export const InvoiceHeader = ({ id }: IInvoiceHeaderProps) => {
   const { t } = useTranslation();
 
   return (
@@ -16,5 +16,3 @@ const InvoiceHeader = ({ id }: IInvoiceHeaderProps) => {
     </View>
   );
 };
-
-export default InvoiceHeader;

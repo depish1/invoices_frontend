@@ -1,6 +1,6 @@
 import { EViewType } from 'Enums/EViewType';
 import { useActiveViewSetter } from 'Hooks/useActiveViewSetter';
-import InvoicesContent from 'Components/Invoices/InvoicesContent/InvoicesContent';
+import { InvoicesContent } from 'Components/Invoices/InvoicesContent/InvoicesContent';
 
 const InvoicesPage = () => {
   useActiveViewSetter(EViewType.INVOICES);

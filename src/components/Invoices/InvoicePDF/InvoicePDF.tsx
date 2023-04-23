@@ -4,17 +4,17 @@ import { useTranslation } from 'react-i18next';
 
 import { calculateTaxAmount, calculateTotalGrossPrice, calculateTotalNetPrice } from 'Helpers/calculateProductsPrice';
 import { invoicePDFstyles } from 'Components/Invoices/InvoicePDF/InvoicePDF.style';
-import DataColumn from 'Components/Invoices/InvoicePDF/InvoicesParts/DataColumn';
-import InvoiceDate from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceDate';
-import InvoiceHeader from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceHeader';
-import ProductsTable from 'Components/Invoices/InvoicePDF/InvoicesParts/ProductsTable';
-import Summary from 'Components/Invoices/InvoicePDF/InvoicesParts/Summary';
+import { DataColumn } from 'Components/Invoices/InvoicePDF/InvoicesParts/DataColumn';
+import { InvoiceDate } from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceDate';
+import { InvoiceHeader } from 'Components/Invoices/InvoicePDF/InvoicesParts/InvoiceHeader';
+import { ProductsTable } from 'Components/Invoices/InvoicePDF/InvoicesParts/ProductsTable';
+import { Summary } from 'Components/Invoices/InvoicePDF/InvoicesParts/Summary';
 
 interface IInvoicePDFProps {
   data: IApiInvoiceWithProducts;
 }
 
-const InvoicePDF = ({ data }: IInvoicePDFProps) => {
+export const InvoicePDF = ({ data }: IInvoicePDFProps) => {
   const { t } = useTranslation();
 
   const totalNetPrice = calculateTotalNetPrice(data.products);
@@ -50,5 +50,3 @@ const InvoicePDF = ({ data }: IInvoicePDFProps) => {
     </Document>
   );
 };
-
-export default InvoicePDF;

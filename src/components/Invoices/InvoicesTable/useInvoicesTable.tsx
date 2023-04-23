@@ -2,11 +2,11 @@ import { useCallback, useMemo } from 'react';
 import dayjs from 'dayjs';
 
 import { EViewType } from 'Enums/EViewType';
-import { IApiInvoice } from '@/types/Api';
+import { IApiInvoice } from 'Types/Api';
 import { RowDataType } from 'Components/SharedComponents/Table/Table.type';
 import { formatPlCurrency } from 'Helpers/currencyFormatter';
 import { useNavigateParams } from 'Hooks/useNavigateParams';
-import InvoiceContextMenu from 'Components/Invoices/InvoiceContextMenu/InvoiceContextMenu';
+import { InvoiceContextMenu } from 'Components/Invoices/InvoiceContextMenu/InvoiceContextMenu';
 
 import { useGetInvoicesQuery } from 'Api/invoicesApi';
 

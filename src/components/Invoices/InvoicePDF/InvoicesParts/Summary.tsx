@@ -10,7 +10,7 @@ interface ISummaryProps {
   totalGrossPrice: number;
 }
 
-const Summary = ({ taxAmount, totalNetPrice, totalGrossPrice }: ISummaryProps) => {
+export const Summary = ({ taxAmount, totalNetPrice, totalGrossPrice }: ISummaryProps) => {
   const { t } = useTranslation();
 
   return (
@@ -23,5 +23,3 @@ const Summary = ({ taxAmount, totalNetPrice, totalGrossPrice }: ISummaryProps) =
     </View>
   );
 };
-
-export default Summary;
