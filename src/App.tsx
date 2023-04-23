@@ -6,7 +6,7 @@ import { router } from './router';
 
 import { isLoaderVisibleSelector } from 'Selectors/loaderVisibility';
 
-const App = () => {
+export const App = () => {
   const isLoaderVisible = useSelector(isLoaderVisibleSelector);
 
   return (
@@ -16,5 +16,3 @@ const App = () => {
     </>
   );
 };
-
-export default App;

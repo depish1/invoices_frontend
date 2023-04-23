@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { IApiInvoice, IApiInvoiceWithProducts, IGenericResponse } from '@/types/Api';
+import { IApiInvoice, IApiInvoiceWithProducts, IGenericResponse } from 'Types/Api';
 import { InvoiceFormInputsType } from 'Components/InvoiceForm/InvoiceForm/InvoiceForm.types';
 
-import prepareAuthHeader from 'Api/prepareHeader';
+import { prepareHeader } from 'Api/prepareHeader';
 
 const BASE_URL = import.meta.env.VITE_API;
 
@@ -16,7 +16,7 @@ export const invoicesApi = createApi({
   reducerPath: 'invoicesApi',
   baseQuery: fetchBaseQuery({
     baseUrl: `${BASE_URL}/api/invoices/`,
-    prepareHeaders: prepareAuthHeader,
+    prepareHeaders: prepareHeader,
   }),
   tagTypes: ['Invoices'],
 

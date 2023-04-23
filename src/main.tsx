@@ -7,7 +7,7 @@ import 'Languages/i18n';
 import { GlobalStyles } from 'Styles/GlobalStyles';
 import { store } from 'Store/store';
 import { theme } from 'Styles/themes';
-import App from '@/App';
+import { App } from '@/App';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>

@@ -6,5 +6,3 @@ export const Footer = () => (
     <FooterContent />
   </FooterWrapper>
 );
-
-export default Footer;

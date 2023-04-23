@@ -6,6 +6,4 @@ interface ISuspensePageProps {
   page: ReactNode;
 }
 
-const SuspensePage = ({ page }: ISuspensePageProps) => <Suspense fallback={<Loader />}>{page}</Suspense>;
-
-export default SuspensePage;
+export const SuspensePage = ({ page }: ISuspensePageProps) => <Suspense fallback={<Loader />}>{page}</Suspense>;
